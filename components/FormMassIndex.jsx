@@ -37,7 +37,7 @@ export const FormMassIndex = () => {
                     una manera sencilla de calcular un proximado del porcentaje de tejido
                     adiposo en el cuerpo de una person.
                 </p>
-                <p>
+                <p className=" mb-6">
                     Los valores requeridos para la fórmula son los siguientes:
                 </p>
                 <div>
@@ -70,7 +70,7 @@ export const FormMassIndex = () => {
                             <p>Altura invalida.</p>
                         )}
                         <label htmlFor="weight" className="mb-2">Peso (kg)</label>
-                        <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.height ? 'mb-6' : ''}`}
+                        <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.weight ? 'mb-6' : ''}`}
                             {...register("weight", {
                                 required: true,
                                 max: 1000,
@@ -82,7 +82,7 @@ export const FormMassIndex = () => {
                             <p>Peso invalido.</p>
                         )}
                         <label htmlFor="waist" className="mb-2">Cintura (cm)</label>
-                        <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.height ? 'mb-6' : ''}`}
+                        <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.waist ? 'mb-6' : ''}`}
                             {...register("waist", {
                                 required: true,
                                 max: 1000,
@@ -94,7 +94,7 @@ export const FormMassIndex = () => {
                             <p>Medida de cintura invalida.</p>
                         )}
                         <label htmlFor="neck" className="mb-2">Cuello (cm)</label>
-                        <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.height ? 'mb-6' : ''}`}
+                        <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.neck ? 'mb-6' : ''}`}
                             {...register("neck", {
                                 required: true,
                                 max: 400,
@@ -110,7 +110,7 @@ export const FormMassIndex = () => {
                         {watchGender == 'F' && (
                             <div className="flex flex-col">
                                 <label htmlFor="hip" className="mb-2">Cadera (cm)</label>
-                                <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.height ? 'mb-6' : ''}`}
+                                <input className={` rounded-3xl border-2 pl-4 py-2 text-[17px] ${!errors?.hip ? 'mb-6' : ''}`}
                                     {...register("hip", {
                                         required: true,
                                         max: 1000,
