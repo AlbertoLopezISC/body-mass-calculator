@@ -66,7 +66,7 @@ export const FormMassIndex = () => {
                             })}
                             type="number" name="height" id="height" />
                         {errors?.height?.type === "required" && <p>Campo requerido</p>}
-                        {errors?.height?.type === "max" || errors?.height?.type === "min" && (
+                        {(errors?.height?.type === "max" || errors?.height?.type === "min") && (
                             <p>Altura invalida.</p>
                         )}
                         <label htmlFor="weight" className="mb-2">Peso (kg)</label>
@@ -78,7 +78,7 @@ export const FormMassIndex = () => {
                             })}
                             type="number" name="weight" id="weight" />
                         {errors?.weight?.type === "required" && <p>Campo requerido</p>}
-                        {errors?.weight?.type === "max" || errors?.weight?.type === "min" && (
+                        {(errors?.weight?.type === "max" || errors?.weight?.type === "min") && (
                             <p>Peso invalido.</p>
                         )}
                         <label htmlFor="waist" className="mb-2">Cintura (cm)</label>
@@ -90,7 +90,7 @@ export const FormMassIndex = () => {
                             })}
                             type="number" name="waist" id="waist" />
                         {errors?.waist?.type === "required" && <p>Campo requerido</p>}
-                        {errors?.waist?.type === "max" || errors?.waist?.type === "min" && (
+                        {(errors?.waist?.type === "max" || errors?.waist?.type === "min") && (
                             <p>Medida de cintura invalida.</p>
                         )}
                         <label htmlFor="neck" className="mb-2">Cuello (cm)</label>
@@ -102,7 +102,7 @@ export const FormMassIndex = () => {
                             })}
                             type="number" name="neck" id="neck" />
                         {errors?.neck?.type === "required" && <p>Campo requerido</p>}
-                        {errors?.neck?.type === "max" || errors?.neck?.type === "min" && (
+                        {(errors?.neck?.type === "max" || errors?.neck?.type === "min") && (
                             <p>Medida de cuello invalida.</p>
                         )}
 
@@ -118,7 +118,7 @@ export const FormMassIndex = () => {
                                     })}
                                     type="number" name="hip" id="hip" />
                                 {errors?.hip?.type === "required" && <p>Campo requerido</p>}
-                                {errors?.hip?.type === "max" || errors?.hip?.type === "min" && (
+                                {(errors?.hip?.type === "max" || errors?.hip?.type === "min") && (
                                     <p>Medida de caderas invalida.</p>
                                 )}
                             </div>
