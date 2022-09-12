@@ -1,0 +1,14 @@
+.gradient {
+    background: linear-gradient(90deg, #009fe3 1%, #009c3d 20%, #8fcb1f 40%, #98c21d 50%, #feca00 65%, #d76328 100%);
+    width: 100%;
+    height: 120px;
+    border-radius: 16px;
+}
+
+.triangule {
+    width: 0;
+    height: 0;
+    border-top: 25px solid white;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
