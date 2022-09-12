@@ -1,5 +1,4 @@
 import { useState } from "react";
-import React from "react";
 import { useForm } from "react-hook-form";
 import { calculateIndexMass } from "../helpers/massIndexCalculator";
 import { ResultMassIndexCalculator } from "./ResultMassIndex";
